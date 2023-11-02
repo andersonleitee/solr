@@ -80,6 +80,4 @@ test:
 #
 production:
   <<: *default
-  database: Rails_Bonsai_production
-  username: Rails_Bonsai
-  password: <%= ENV['RAILS_BONSAI_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
